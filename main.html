@@ -8,18 +8,18 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-<form onsubmit="return false" style="margin: 20px;">
+<form method="post" onsubmit="return false" style="margin: 20px;">
 
         <div class="form" style="border: 2px solid black;padding: 20px; width: 500px;">
 
             <label for="name">Name* </label>
-            <input id="name" type="text">
+            <input id="name" type="text" required>
             <div class="name-error" style="visibility:hidden; color: red; padding: 5px;"> ! Name should not be Empty.
             </div>
             <br><br>
 
             <label for="email">Email*</label>
-            <input type="email" id="email">
+            <input type="email" id="email" required>
             <div class="email-error" style="visibility: hidden; color: red; padding: 5px;">! Email should not be Empty
             </div>
             <br><br>
@@ -42,23 +42,23 @@
             <br><br><br><br><br>
 
             <label for="age">Age*</label>
-            <input type="number" name="" id="age">
+            <input type="number" name="age" id="age" required>
             <div class="age-error" style="visibility: hidden; color: red; padding: 5px;">! Age should not be Empty</div>
             <br><br>
 
-            <label for="DOB">DOB*</label>
-            <input type="date" name="" id="dob">
+            <label for="dob">DOB*</label>
+            <input type="date" name="" id="dob" required>
             <div class="dob-error" style="visibility: hidden; color: red; padding: 5px;"> ! DOB should not be Empty
             </div>
             <br><br>
 
             <label for="password">Password*</label>
-            <input type="password" name="" id="password" autocomplete="">
+            <input type="password" name="" id="password" autocomplete="" required>
             <div class="pass-error" style="visibility: hidden; color: red; padding: 5px;">! Password should not be Empty
             </div>
             <br><br>
 
-            <button onclick="validate()" id="btn">Submit</button>
+             <input type="button" id="btn" value="Submit" onclick="validate()">
 
         </div>
     </form>
