@@ -8,6 +8,61 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+<form onsubmit="return false" style="margin: 20px;">
+
+        <div class="form" style="border: 2px solid black;padding: 20px; width: 500px;">
+
+            <label for="name">Name* </label>
+            <input id="name" type="text">
+            <div class="name-error" style="visibility:hidden; color: red; padding: 5px;"> ! Name should not be Empty.
+            </div>
+            <br><br>
+
+            <label for="email">Email*</label>
+            <input type="email" id="email">
+            <div class="email-error" style="visibility: hidden; color: red; padding: 5px;">! Email should not be Empty
+            </div>
+            <br><br>
+
+            <label for="gender">Gender* :</label>
+            <input type="radio" name="gender" id="male"> male
+            <input type="radio" name="gender" id="female"> female
+
+            <div id="gender-error" style="color: red;"> </div>
+            <br><br>
+
+            <label for="Car Brands">Car Brands:</label>
+            <select id="car">
+                <option value="1"></option>
+                <option value="1">BMW</option>
+                <option value="2">Audi</option>
+                <option value="3">Mercedez</option>
+            </select>
+
+            <br><br><br><br><br>
+
+            <label for="age">Age*</label>
+            <input type="number" name="" id="age">
+            <div class="age-error" style="visibility: hidden; color: red; padding: 5px;">! Age should not be Empty</div>
+            <br><br>
+
+            <label for="DOB">DOB*</label>
+            <input type="date" name="" id="dob">
+            <div class="dob-error" style="visibility: hidden; color: red; padding: 5px;"> ! DOB should not be Empty
+            </div>
+            <br><br>
+
+            <label for="password">Password*</label>
+            <input type="password" name="" id="password" autocomplete="">
+            <div class="pass-error" style="visibility: hidden; color: red; padding: 5px;">! Password should not be Empty
+            </div>
+            <br><br>
+
+            <button onclick="validate()" id="btn">Submit</button>
+
+        </div>
+    </form>
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
